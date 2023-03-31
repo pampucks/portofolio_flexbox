@@ -1,139 +1,113 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: Arial;
   padding: 0;
-  background-color: bisque;
 }
-.profile {
-  display: flex;
-  justify-content: space-around;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(234, 234, 234);
+}
+
+.grid-container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  width: calc(100% - 300px);
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  min-width: 600px;
-  max-width: 800px;
 }
 
-.profile > .photo > img {
-  border-radius: 100%;
-  margin: 10px;
-  border: 5px solid rgb(237, 237, 237);
+.grid-container > div {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: flex-end;
+  /* padding: 20px; */
+  width: 100%;
 }
 
-.profile > .info {
+.grid-container > div.image {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  /* background-color: aqua; */
-}
-
-.profile > .info > * {
-  padding-bottom: 10px;
-}
-
-.profile > .info > .brand {
-  display: flex;
-  align-items: center;
-}
-
-.profile > .info > .brand span {
-  font-weight: 700;
-  font-size: 2em;
-}
-
-.profile > .info > .brand button {
-  margin-left: 20px;
-  padding: 5px 30px;
-  border: 2px solid rgb(91, 154, 255);
-  border-radius: 4px;
-  background-color: transparent;
-  font-size: 1em;
-}
-
-.profile .about a {
-  text-decoration: none;
-  color: rgb(91, 154, 255);
-}
-
-.profile .socials span {
-  margin-right: 15px;
-}
-.header {
-  text-align: center;
-  padding: 32px;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* padding: 0 4px; */
-}
-.column {
-  width: 30%;
-  padding: 0 10px;
-  /* background-color: red; */
-}
-/* .column img {
-  margin-top: 5%;
-} */
-
-.column img {
   width: 100%;
-  margin-top: 8px;
-  /* border-radius: 10px; */
-  /* box-shadow: 3px 3px 5px gray;
-  border: 5px solid rgb(223, 223, 223); */
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-/* aturan CSS untuk layar kurang dari atau sama dengan 800px lebar */
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 10px;
-  }
+
+div.image:hover {
+  opacity: 1;
 }
-/* aturan CSS untuk layar kurang dari atau sama dengan 600px lebar */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-    /* margin-left: 40px; */
+
+div.image > .body-content {
+  display: block;
+  background-color: rgba(254, 254, 254, 0.8);
+  width: inherit;
+  padding: 10px;
+  font-size: 1vw;
+}
+
+/* Aturan CSS untuk tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Aturan CSS untuk layar dengan lebar antara 768px dan 1023px */
+  .grid-container {
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    gap: 0px;
   }
-  .profile {
+
+  .grid-container > div.image {
+    justify-content: flex-end;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vw;
+    /* padding: 20px; */
+    width: 100%;
+    height: 200px;
   }
 
-  .profile > .photo {
-    display: flex;
-    justify-content: center;
+  div.image > .body-content {
+    font-size: 1vw;
+  }
+  /* .grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
-  .profile > .photo > img {
-    width: 50%;
+  .grid-item-4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 
-  .profile > .info {
-    justify-content: center;
-    padding: 10px;
+  .grid-item-5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
-  .profile > .info > .brand {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+
+  .grid-item-8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
-  .profile > .info > .brand > button {
-    display: block;
-    margin-top: 10px;
+
+  .grid-item-9 {
+    grid-column: 1;
+    grid-column-end: 4;
+  } */
+}
+/* Aturan CSS untuk ponsel */
+@media screen and (max-width: 767px) {
+  /* Aturan CSS untuk layar dengan lebar kurang dari atau sama dengan 767px */
+  .grid-container {
+    grid-template-columns: auto auto;
+    width: 100%;
+    max-width: 500px;
+    /* min-width: 90%; */
+    gap: 10px;
   }
-  .profile .about {
-    text-align: center;
+
+  div.image > .body-content {
+    font-size: 2vw;
   }
-  .profile .socials span {
-    margin: 0;
-    text-align: center;
+
+  .grid-item-1 {
+    grid-column: 1 / 3;
   }
 }

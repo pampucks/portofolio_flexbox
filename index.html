@@ -4,10 +4,154 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="statics/index.css" />
-    <title>Responsive Web Design</title>
+    <title>Grid</title>
   </head>
   <body>
+    <div class="grid-container">
+    <!-- cat -->
+      <div class="card" style="width: 18rem;">
+        <img src="image/cat.jpg" class="card-img-top image grid-item-1" alt="cat">
+        <div class="card-body">
+            <h5 class="card-title">Cat</h5>
+            <p class="card-text">Cats can drink sea water in order to survive. (In case youre wondering, we cant.)</p>
+            <a href="https://cvillecatcare.com/veterinary-topics/101-amazing-cat-facts-fun-trivia-about-your-feline-friend/" target="_blank" class="btn btn-primary">Fun Fact About Cats</a>
+        </div>
+      </div>
+      <!-- dog -->
+      <div class="card" style="width: 18rem;">
+        <img src="image/dog.jpg" class="card-img-top image" alt="dog">
+        <div class="card-body">
+          <div class="body-content">
+            <h5 class="card-title">Dog</h5>
+            <p class="card-text">45% of dogs sleep in their owner’s beds. Hopefully those pups share the blanket... </p>
+            <a href="https://www.thedrakecenter.com/services/dogs/blog/23-amazing-facts-about-dogs-you-probably-didnt-know" target="_blank" class="btn btn-primary">Fun Fact About Dogs</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="image/elephant.jpg" class="card-img-top image" alt="elephant">
+        <div class="card-body">
+          <div class="body-content">
+            <h5 class="card-title">Elephant</h5>
+            <p class="card-text">Elephants Are the Only Animal That Can’t Jump. They always keep one leg on the ground - even when running.</p>
+            <a href="https://www.wwf.org.uk/learn/fascinating-facts/elephants" target="_blank" class="btn btn-primary">Fun Fact About Elephants</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="image/cow.jpg" class="card-img-top image" alt="cow">
+        <div class="card-body">
+          <div class="body-content">
+            <h5 class="card-title">Cow</h5>
+            <p class="card-text">Cows can take dislikes to each other and bear grudges. They can also recognise and remember people who have treated them unkindly, for years.</p>
+            <a href="https://www.wwf.org.uk/learn/fascinating-facts/cows" target="_blank" class="btn btn-primary">Fun Fact About Cows</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="image/flamingo.jpg" class="card-img-top image grid" target="_blank" alt="flamingo">
+        <div class="card-body">
+          <div class="body-content">
+            <h5 class="card-title">Flamingo</h5>
+            <p class="card-text">The flamingo can only eat when its head is upside down. <br>No one knows why flamingos stand on one foot. <br>Flamingos produce milk. Well, kind of.</p>
+            <a href="https://facts.net/flamingo-facts/" target="_blank" class="btn btn-primary">Fun Fact About Flamingo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="image/owl.jpg" class="card-img-top image" alt="owl">
+        <div class="card-body">
+          <h5 class="card-title">Owl</h5>
+          <p class="card-text">A group of owls is called a parliament. This originates from C.S. Lewis’ description of a meeting of owls in The Chronicles of Narnia.</p>
+          <a href="https://www.audubon.org/news/13-fun-facts-about-owls" target="_blank" class="btn btn-primary">Fun Fact About Owls</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="image/fox.jpg" class="card-img-top image" alt="fox">
+        <div class="card-body">
+          <h5 class="card-title">Fox</h5>
+          <p class="card-text">Foxes make use of the earth’s magnetic field to hunt. <br>The sentence “The quick brown fox jumps over a lazy dog.” uses every letter of the alphabet.</p>
+          <a href="https://www.wwf.org.uk/learn/fascinating-facts/cows" target="_blank" class="btn btn-primary">Fun Fact About Foxes</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="image/chicken.jpg" class="card-img-top image" alt="chicken">
+        <div class="card-body">
+          <h5 class="card-title">Chicken</h5>
+          <p class="card-text">Chickens are the closest living relatives of dinosaurs! Scientific evidence has proven the shared common ancestry between chickens and the Tyrannosaurus rex.</p>
+          <a href="https://spca.bc.ca/news/fun-facts-about-chickens/" target="_blank" class="btn btn-primary">Fun Fact About Chickens</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="image/horse.jpg" class="card-img-top image" alt="horse">
+        <div class="card-body">
+          <h5 class="card-title">Horse</h5>
+          <p class="card-text">Horse have two blind spots - one directly behind them, and the other directly in-front of their head. This means that they cannot see the grass they are grazing on, or the carrot you are sticking out to them!</p>
+          <a href="https://spca.bc.ca/news/fun-facts-about-horses/" target="_blank" class="btn btn-primary">Fun Fact About Horses</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- <div class="grid-container">
+      <div class="image grid-item-1" style="background-image: url(image/1.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+      <div class="image grid-item-2" style="background-image: url(image/3.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+      <div class="image grid-item-3" style="background-image: url(image/6.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+      
+      <div class="image grid-item-4" style="background-image: url(image/5.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+      <div class="image grid-item-5" style="background-image: url(image/9.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+      <div class="image grid-item-6" style="background-image: url(image/4.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+      <div class="image grid-item-7" style="background-image: url(image/2.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+      <div class="image grid-item-8" style="background-image: url(image/7.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+      <div class="image grid-item-9" style="background-image: url(image/8.jpg);">
+        <div class="body-content">
+          <h2>Hello</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus magni necessitatibus unde modi deleniti rerum, at maxime! Est suscipit, similique quisquam illum commodi aut tempora sint aperiam iste a facilis!</p>
+        </div>
+      </div>
+    </div> -->
     <!-- <div class="header">
       <h1>Animals</h1>
       <p>
@@ -15,28 +159,7 @@
         beauty of the animal kingdom through your screen.
       </p>
     </div> -->
-    <div class="profile">
-      <div class="photo">
-        <img
-          src="https://picsum.photos/200/200?random=4"
-          alt=""
-          class="photo-profile"
-        />
-      </div>
-      <div class="info">
-        <div class="brand">
-          <span>Nike</span>
-          <button>Follow</button>
-        </div>
-        <div class="about">nike Just Do It. <a href="#">www.nike.com</a></div>
-        <div class="socials">
-          <span> <strong>789</strong> posts </span>
-          <span> <strong>16.7m</strong> followers </span>
-          <span> <strong>129</strong> following </span>
-        </div>
-      </div>
-    </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="column">
         <img src="image/1.jpg" alt="" />
         <img src="image/2.jpg" alt="" />
@@ -51,7 +174,7 @@
         <img src="image/7.jpg" alt="" />
         <img src="image/8.jpg" alt="" />
         <img src="image/9.jpg" alt="" />
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
